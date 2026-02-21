@@ -11,9 +11,8 @@ This ePortfolio presents my **CS 499 Capstone Project**, showcasing my skills in
   - [Enhancement 1: Software Design and Engineering](#enhancement-1-software-design-and-engineering)  
   - [Enhancement 2: Algorithms and Data Structures](#enhancement-2-algorithms-and-data-structures)  
   - [Enhancement 3: Databases](#enhancement-3-databases)  
-- [Demo](#demo)  
-- [Project Structure](#project-structure)  
-- [License](#license)  
+- [Demo](#demo) 
+- [Author](#author)  
 
 ---
 
@@ -99,7 +98,7 @@ By moving from LocalStorage to Firestore with UID-based organization and securit
 Video link:https://youtu.be/spKugOYgpIc
 
 ---
-## 👩‍💻 Author
+## Author
 
 Reeham Imam  
 Computer Science Student  
