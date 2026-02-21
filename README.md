@@ -41,13 +41,13 @@ Video link:https://youtu.be/sUcE-wRmXvI
 ## Artifacts
 
 ### Enhancement 1: Software Design and Engineering
-For this milestone, I chose my Recipe Roulette web app as the artifact for my ePortfolio. I originally built this project in a previous course as a full-stack web application that helps users discover recipes, search by ingredients or name, save favorites, and manage their accounts. It integrates TheMealDB API for recipe data, Firebase Authentication for login and sign-up, and Firestore for storing user-specific data.
-I selected this project because it brings together front-end development, back-end integration, API communication, and database design in one cohesive system. It’s not just a static website, it’s a functioning application with authentication flow, user state management, and persistent data.
+For this milestone, I chose my Recipe Roulette web app as the artifact for my ePortfolio. I originally built this project in a previous course as a full-stack web application that helps users discover recipes, search by ingredients or name, save favorites, and manage their accounts. It integrates TheMealDB API for recipe data, Firebase Authentication for login and sign-up, and Firestore for storing user-specific data. I selected this project because it brings together front-end development, back-end integration, API communication, and database design in one cohesive system. It’s not just a static website, it’s a functioning application with authentication flow, user state management, and persistent data.
 For the first enhancement, I focused on improving maintainability, usability, and overall structure. First, I added detailed comments across all JavaScript files. Instead of leaving logic unexplained, I documented what each function does, how Firebase interactions work, and how user state is handled. This makes the code easier to understand for collaborators or future developers and reflects real-world code review standards.
+
 Second, I improved the layout and usability of the favorites section. Previously, the favorites container would cut off after five recipes, which created a poor user experience. I redesigned the CSS layout and made the container scrollable so it can handle any number of saved recipes without breaking the UI. This was a small visual change, but it required careful testing to make sure it didn’t affect responsiveness or other elements on the page.
+
 Third, I standardized the navbar and button behavior across all pages. Login, sign-up, and logout buttons now behave consistently depending on authentication state. I also ensured proper redirects after login and logout and added clear error messages in the UI when authentication fails. This improved both usability and reliability.
-Through this enhancement, I demonstrated my ability to evaluate an existing system, identify weak points, and refine it using software engineering principles. I practiced iterative testing, improved code documentation, and made design trade-offs that balanced usability with maintainability. This aligns strongly with course outcomes related to designing computing solutions, communicating technical decisions clearly, and implementing professional-quality software.
-More than anything, this milestone reflects growth. I didn’t just build something that works, I improved it to be cleaner, more maintainable, and more user-centered.
+Through this enhancement, I demonstrated my ability to evaluate an existing system, identify weak points, and refine it using software engineering principles. I practiced iterative testing, improved code documentation, and made design trade-offs that balanced usability with maintainability. This aligns strongly with course outcomes related to designing computing solutions, communicating technical decisions clearly, and implementing professional-quality software. More than anything, this milestone reflects growth. I didn’t just build something that works, I improved it to be cleaner, more maintainable, and more user-centered.
 
 
 ### Enhancement 2: Algorithms and Data Structures
@@ -68,9 +68,11 @@ Instead of just writing code that works, I made it more efficient and scalable.
 ### Enhancement 3: Databases
 For the database enhancement, I focused on transitioning Recipe Roulette from local storage to a more scalable and secure database architecture using Firebase Firestore.
 Originally, favorite recipes were stored in the browser using LocalStorage. While that approach worked for simple persistence, it had major limitations:
+
 •	Data was tied to a single device.
 •	Users couldn’t access favorites across sessions or devices.
 •	There was no structured user isolation.
+
 To address this, I migrated the favorites feature to Firestore and structured the database around authenticated users. Each user’s favorites are now stored under their unique Firebase Authentication UID. This ensures that user data is logically separated and associated only with the correct account.
 Firestore now acts as the persistent data layer, while the front end retrieves and updates data securely through Firebase SDK calls.
 
@@ -87,7 +89,7 @@ This aligns directly with the course outcome focused on developing a security mi
 •	Preventing unauthorized reads/writes
 •	Validating inputs before storing data
 •	Handling authentication states securely
-#
+
 By moving from LocalStorage to Firestore with UID-based organization and security rules, I transformed the app from a basic client-side project into a more production-ready full-stack application.
 
 
