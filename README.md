@@ -1,4 +1,4 @@
-# 🍳 Recipe Roulette
+#  Recipe Roulette
 
 Recipe Roulette is a full-stack web application designed to make
 discovering new recipes interactive, personalized, and engaging. Users
@@ -6,7 +6,7 @@ can generate random meals, search by ingredients, save favorites.
 
 ------------------------------------------------------------------------
 
-## 🚀 Features
+##  Features
 
 ###  Random Recipe Generator
 
