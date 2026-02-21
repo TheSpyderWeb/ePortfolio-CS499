@@ -54,13 +54,13 @@ More than anything, this milestone reflects growth. I didn’t just build someth
 For the algorithms and data structures enhancement, I focused on optimizing the favorites feature in Recipe Roulette.
 Originally, I stored favorite meal IDs in an array. Every time I needed to check whether a meal was already saved, I had to loop through the entire array. That meant each lookup was O(n) time complexity. While this worked for small amounts of data, it doesn’t scale well as the number of favorites grows.
 To improve efficiency, I replaced the array-based lookup approach with a JavaScript Map. Each meal ID is now stored as a key, and the full meal object is cached as the value. This allows instant lookups in O(1) time complexity.
-#
+-
 The Map is used strictly for in-memory performance, while Firestore remains the source of truth for persistent storage. This means:
 •	Firestore stores user favorites long-term.
 •	The Map improves runtime efficiency during a session.
 •	I reduce unnecessary API calls because cached meals don’t need to be re-fetched.
 I tested this enhancement by repeatedly adding and removing favorites, refreshing the page, and monitoring performance behavior in the console. The app feels noticeably more responsive.
-#
+-
 This change may seem small, but it demonstrates something important like choosing the correct data structure matters. It shows that I can analyze time complexity, identify inefficiencies, and apply algorithmic principles to improve real-world software performance. That directly aligns with the course outcome related to designing and evaluating computing solutions using algorithmic principles and managing trade-offs.
 Instead of just writing code that works, I made it more efficient and scalable.
 
